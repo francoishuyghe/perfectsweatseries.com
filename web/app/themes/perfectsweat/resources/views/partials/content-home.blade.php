@@ -1,11 +1,12 @@
 <section id="top">
-    <h1>{{ get_bloginfo( 'name' ) }}</h1>
-    <div class="clouds"></div>
+    <img src="@asset('images/TPS_title.svg')" />
+    <div class="gradient-circle parallax" data-depth="0.2"></div>
+    <div class="gradient-circle-white parallax" data-depth="0.6"></div>
 </section>
 
 <section id="intro">
     <div class="container">
-    <h2>The sweat bath in its many forms has comforted, healed, and strengthened the social bonds between rich and poor, young and old, strong and the weak.</h2>
+    The sweat bath in its many forms has comforted, healed, and strengthened the social bonds between rich and poor, young and old, strong and the weak.
     </div>
 </section>
 

@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/sage",
+  "publicPath": "/app/themes/perfectsweat",
   "devUrl": "http://perfectsweat.test",
   "proxyUrl": "http://localhost:3004",
   "cacheBusting": "[name]_[hash:8]",

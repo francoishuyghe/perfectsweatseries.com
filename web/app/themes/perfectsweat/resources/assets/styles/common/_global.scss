@@ -1,3 +1,22 @@
+body{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+
+    h1, h2{
+        font-family: 'Ogg Roman', serif;    
+    }
+}
+
 section{
     padding: 100px 0;
+}
+
+// Fonts
+@font-face {
+    font-family: 'Ogg Roman';
+    src: url('../fonts/OggRoman-Regular.woff2') format('woff2'),
+        url('../fonts/OggRoman-Regular.woff') format('woff'),
+        url('../fonts/OggRoman-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

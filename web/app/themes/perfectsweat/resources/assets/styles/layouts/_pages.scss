@@ -2,31 +2,40 @@
     #top{
         min-height: 100vh;
         background-color: theme-color(blue);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(44,159,226,1) 100%);
         color: theme-color(white);
         position: relative;
         overflow: hidden;
         z-index: 99;
 
-        h1{
+        img{
+            width: 700px;
+            height: 290px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
 
-        .clouds{
+        .gradient-circle{
             position: absolute;
-            bottom: -50px;
-            width: 120%;
-            height: 50%;
-            background-color: rgba(theme-color(white), .4);
-            filter: blur(50px);
+            top: 30%;
+            right: 10%;
+        }
+        
+        .gradient-circle-white{
+            position: absolute;
+            bottom: 0%;
+            left: 10%;
+            opacity: .6;
         }
     }
 
     #intro{
         padding: 200px 0;
         text-align: center;
+        font-size: 2.5em;
+        color: theme-color(blue);
     }
 
     #episodes{
@@ -49,5 +58,19 @@
                 }
             }
         }
+    }
+
+    .gradient-circle{
+        width: 500px;
+        height: 500px;
+        background: url('../images/gradient-circle.png');
+        background-size: contain;
+    }
+
+    .gradient-circle-white{
+        width: 700px;
+        height: 700px;
+        background: url('../images/gradient-circle-white.png');
+        background-size: contain;
     }
 }
