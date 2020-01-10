@@ -1,0 +1,39 @@
+.banner .nav{
+  li {
+    @extend .nav-item;
+  }
+
+  a {
+    @extend .nav-link;
+  }
+}
+
+.banner{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 98;
+  background: theme-color(white);
+  border-bottom: 1px solid grey;
+
+  .brand{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  ul.nav{
+    display: flex;
+
+    li{
+      a{
+        display: inline-block;
+      }
+
+      &:nth-child(2){
+        flex: 1;
+      }
+    }
+  }
+}

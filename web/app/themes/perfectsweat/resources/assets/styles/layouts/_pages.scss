@@ -1,0 +1,53 @@
+.home{
+    #top{
+        min-height: 100vh;
+        background-color: theme-color(blue);
+        color: theme-color(white);
+        position: relative;
+        overflow: hidden;
+        z-index: 99;
+
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .clouds{
+            position: absolute;
+            bottom: -50px;
+            width: 120%;
+            height: 50%;
+            background-color: rgba(theme-color(white), .4);
+            filter: blur(50px);
+        }
+    }
+
+    #intro{
+        padding: 200px 0;
+        text-align: center;
+    }
+
+    #episodes{
+        .episode-block{
+            .thumbnail{
+                margin-bottom: 20px;
+            }
+
+            a{
+                color: theme-color(black);
+                transition: .25s;
+
+                &:hover{
+                    text-decoration: none;
+                    color: theme-color(blue);
+                }
+
+                &.btn{
+                    color: theme-color(blue);
+                }
+            }
+        }
+    }
+}
