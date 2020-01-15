@@ -19,6 +19,12 @@ body{
         font-weight: 100;
     }
 
+    h5{
+        text-transform: uppercase;
+        color: theme-color(gold);
+        font-weight: 100;
+    }
+
     a{
         &:hover{
             text-decoration: none;

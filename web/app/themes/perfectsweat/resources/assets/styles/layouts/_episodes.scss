@@ -1,0 +1,10 @@
+.single-episode{
+    .content .container{
+        & > * {
+            margin-bottom: $grid-gutter * 2;
+        }
+    }
+    .wp-block-image{
+        text-align: center;
+    }
+}

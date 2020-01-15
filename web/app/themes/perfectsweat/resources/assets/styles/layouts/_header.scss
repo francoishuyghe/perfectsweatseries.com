@@ -14,13 +14,22 @@
   width: 100%;
   z-index: 98;
   background: theme-color(white);
-  border-bottom: 1px solid grey;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0);
+  transition: .25s;
+  padding: 10px 0;
+
+  &.scrolled{
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.16);
+  }
 
   .brand{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Ogg Roman', serif;
+    color: theme-color(black);
+    font-size: 1.5em;
   }
 
   ul.nav{
@@ -29,6 +38,14 @@
     li{
       a{
         display: inline-block;
+        color: theme-color(grey);
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: .25s;
+
+        &:hover{
+          color: theme-color(blue);
+        }
       }
 
       &:nth-child(2){
