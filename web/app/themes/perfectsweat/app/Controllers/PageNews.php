@@ -5,12 +5,12 @@ namespace App\Controllers;
 use Sober\Controller\Controller;
 use WP_Query;
 
-class FrontPage extends Controller
+class PageNews extends Controller
 {
 
-    public function episodes() {
+    public function news() {
 	    $args = array(
-	    	'post_type' => 'episode',
+	    	'post_type' => 'post',
 	    	//'orderby'	=> 'rand',
 	    	'posts_per_page' => -1,
 	    );

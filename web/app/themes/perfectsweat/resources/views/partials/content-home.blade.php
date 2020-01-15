@@ -25,7 +25,7 @@
                     <div class="thumbnail">
                         {!! get_the_post_thumbnail( $episode->ID, 'large' ) !!}
                     </div>
-                    <a href="{{ $episode->permalink }}">
+                    <a href="{{ get_permalink($episode->ID) }}">
                         <h6>Episode {{ $loop->iteration }}</h6>
                         <h4>{{ $episode->post_title }}</h4>
                     </a>
