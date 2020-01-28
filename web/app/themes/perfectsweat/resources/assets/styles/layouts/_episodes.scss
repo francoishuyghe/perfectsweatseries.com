@@ -4,6 +4,25 @@
             margin-bottom: $grid-gutter * 2;
         }
     }
+
+    h1{
+        text-align: left;
+
+        @include media-breakpoint-up(md){
+            font-size: 3em;
+        }
+    }
+
+    h4{
+        margin-bottom: 0;
+    }
+
+    .wp-block-column{
+        .wp-block-image{
+            margin-top: 0;
+        }    
+    }
+
     .wp-block-image{
         text-align: center;
     }

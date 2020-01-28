@@ -23,9 +23,14 @@ add_action('customize_preview_init', function () {
     wp_enqueue_script('sage/customizer.js', asset_path('scripts/customizer.js'), ['customize-preview'], null, true);
 });
 
+
+//Add Admin styles
+add_action('admin_enqueue_scripts', function () {
+    wp_enqueue_style('custom_wp_admin_css', asset_path('styles/admin.css'));
+});
+
+
 // REGISTER CUSTOM POST TYPES
-
-
 add_action( 'init', function() {
     $args = array(
         'public' => true,

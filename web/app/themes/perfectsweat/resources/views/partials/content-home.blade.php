@@ -6,8 +6,15 @@
 
 <section id="intro">
     <div class="container">
-    The sweat bath in its many forms has comforted, healed, and strengthened the social bonds between rich and poor, young and old, strong and the weak.
+        <div class="text">{{ $data['intro_text'] }}</div>
+        <div class="video-wrap">
+            <a class="btn blue video-btn">Watch Trailer</a>
+            <div class="video-player">
+                {!! $data['trailer'] !!}
+            </div>
+        </div>
     </div>
+    <div class="gradient-circle-white parallax" data-depth="0.6"></div>
 </section>
 
 <section id="content">
@@ -18,19 +25,21 @@
 
 <section id="episodes">
     <div class="container">
-        <h2>Episodes</h2>
+        <h2>Enter the Sweat Bath</h2>
         <div class="row">
             @foreach ($episodes as $episode)
                 <div class="col-md-6 episode-block">
                     <div class="thumbnail">
-                        {!! get_the_post_thumbnail( $episode->ID, 'large' ) !!}
+                        <a href="{{ get_permalink($episode->ID) }}">
+                            {!! get_the_post_thumbnail( $episode->ID, 'large' ) !!}
+                        </a>
                     </div>
-                    <a href="{{ get_permalink($episode->ID) }}">
+                    <a class="color-black" href="{{ get_permalink($episode->ID) }}">
                         <h6>Episode {{ $loop->iteration }}</h6>
                         <h4>{{ $episode->post_title }}</h4>
                     </a>
                     <p>{{ $episode->post_excerpt }}</p>
-                    <a class="btn" href="/#">Watch</a>
+                    <a href="{{ get_permalink($episode->ID) }}"><i class="fas fa-play"></i> Watch</a>
                 </div>
             @endforeach
         </div>

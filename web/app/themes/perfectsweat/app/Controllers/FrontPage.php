@@ -18,4 +18,11 @@ class FrontPage extends Controller
 	    return $the_query->posts;
 	}
 
+	public function data() {
+		$data['intro_text'] = get_field('intro_text');
+		$data['trailer'] = get_field('trailer');
+
+		return $data;
+	}
+
 }

@@ -10,6 +10,14 @@ export default {
         banner.removeClass('scrolled');
       }
     });
+
+    //Video players
+    $('.video-btn').click(function () { 
+      $(this).parent().toggleClass('active');
+    });
+    $('.video-player').click(function () { 
+      $(this).parent().toggleClass('active');
+    });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

@@ -15,6 +15,12 @@
         padding: 0; 
     }
 
+    h2{
+        text-align: center;
+        color: theme-color(gold);
+        margin-bottom: $grid-gutter;
+    }
+
     #top{
         min-height: 100vh;
         background-color: theme-color(blue);
@@ -48,30 +54,52 @@
     }
 
     #intro{
-        padding: 200px 0;
+        padding: 200px 0 0;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 1.5em;
         color: theme-color(blue);
+        position: relative;
+
+        .gradient-circle-white{
+            position: absolute;
+            left: 10%;
+        }
+
+        @include media-breakpoint-up(md){
+            font-size: 2.5em;
+        }
+    }
+
+    #content{
+        p{
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
     }
 
     #episodes{
         .episode-block{
+            margin-bottom: $grid-gutter;
+
             .thumbnail{
                 margin-bottom: 20px;
             }
 
             a{
-                color: theme-color(black);
                 transition: .25s;
+
+                i{
+                    margin-right: 10px;
+                }
 
                 &:hover{
                     text-decoration: none;
                     color: theme-color(blue);
                 }
+            }
 
-                &.btn{
-                    color: theme-color(blue);
-                }
+            @include media-breakpoint-up(md){
+                margin-bottom: 0;
             }
         }
     }
@@ -81,6 +109,7 @@
         height: 500px;
         background: url('../images/gradient-circle.png');
         background-size: contain;
+        pointer-events: none;
     }
 
     .gradient-circle-white{
@@ -88,11 +117,20 @@
         height: 700px;
         background: url('../images/gradient-circle-white.png');
         background-size: contain;
+        pointer-events: none;
     }
 }
 
 .page.news{
     .news-post{
-        margin-bottom: $grid-gutter;
+        margin-bottom: $grid-gutter * 2;
+        padding-bottom: $grid-gutter * 2;
+        border-bottom: 1px solid theme-color(black);
+
+        &:last-child{
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
     }
 }

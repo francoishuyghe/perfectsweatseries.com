@@ -4,11 +4,12 @@ body{
 
     h1{
         text-align: center;
-        font-family: 'Ogg Roman', serif;    
+        font-family: 'Ogg Roman', serif;
     }
     
     h2{
-        font-family: 'Ogg Roman', serif;    
+        //font-family: 'Ogg Roman', serif;    
+        font-weight: 100;
     }
 
     h3{
@@ -26,8 +27,32 @@ body{
     }
 
     a{
+        color: theme-color(blue);
+
         &:hover{
             text-decoration: none;
+        }
+
+        &.color-black{
+            color: theme-color(black);
+        }
+
+        &.btn{
+            text-transform: uppercase;
+
+            &.blue{
+                margin-top: $grid-gutter;
+                background-color: theme-color(blue);
+                color: theme-color(white);
+                border-radius: 2em;
+                padding: 1em 2em;
+                cursor: pointer;
+                transition: .25s;
+
+                &:hover{
+                    background-color: darken(theme-color(blue), 5);
+                }
+            }
         }
     }
 }
@@ -38,7 +63,33 @@ img{
 }
 
 section{
-    padding: 100px 0;
+    padding: $grid-gutter 0;
+
+    @include media-breakpoint-up(md){
+        padding: 100px 0;
+    }
+}
+
+//Video players
+.video-wrap{
+    .video-player{
+        display: none;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.9);
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.active{
+        .video-player{
+            display: flex;
+        }
+    }
 }
 
 // Fonts

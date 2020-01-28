@@ -1,0 +1,18 @@
+.single{
+    .content .container{
+        max-width: 800px;
+    }
+
+    h1{
+        margin-bottom: $grid-gutter;
+    }
+
+    figure{
+        text-align: center;
+        margin: $grid-gutter auto;
+
+        figcaption{
+            font-size: .8em;
+        }
+    }
+}

@@ -7,4 +7,7 @@
   {{-- Proxima Nova font --}}
   <link rel="stylesheet" href="https://use.typekit.net/wbp5goe.css">
 
+  {{-- FontAwesome --}}
+  <script src="https://kit.fontawesome.com/1c360abb4c.js" crossorigin="anonymous"></script>
+
 </head>
