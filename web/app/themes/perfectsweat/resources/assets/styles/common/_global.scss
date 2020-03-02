@@ -1,6 +1,7 @@
 body{
     font-family: proxima-nova, sans-serif;
     font-weight: 100;
+    font-size: 18px;
 
     h1{
         text-align: center;
@@ -70,6 +71,17 @@ section{
     }
 }
 
+//Full Width images
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}
+
 //Video players
 .video-wrap{
     .video-player{
@@ -80,7 +92,7 @@ section{
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,.9);
+        background: rgba(0,0,0,.8);
         justify-content: center;
         align-items: center;
     }

@@ -41,18 +41,19 @@
 
         .gradient-circle{
             position: absolute;
-            top: 35%;
+            top: 20%;
             right: 10%;
+            opacity: .7;
 
             @include media-breakpoint-up(md){
-                top: 30%;
+                top: 25%;
             }
         }
         
         .gradient-circle-white{
             position: absolute;
             bottom: 0%;
-            left: 10%;
+            left: 0%;
             opacity: .6;
         }
     }
@@ -110,16 +111,18 @@
     }
 
     .gradient-circle{
-        width: 500px;
-        height: 500px;
+        width: 50%;
+        padding-top: 50%;
+        height: 0;
         background: url('../images/gradient-circle.png');
         background-size: contain;
         pointer-events: none;
     }
 
     .gradient-circle-white{
-        width: 700px;
-        height: 700px;
+        width: 70%;
+        height: 0;
+        padding-top: 70%;
         background: url('../images/gradient-circle-white.png');
         background-size: contain;
         pointer-events: none;
